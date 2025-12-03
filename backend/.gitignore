@@ -1,0 +1,48 @@
+# Python
+.Python
+__pycache__
+*.pyc
+*.pyd
+*.pyo
+*.egg
+*.egg-info/
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables and secrets (CRITICAL)
+.env
+.flaskenv
+.secrets.toml
+# adjust the above lines if your environment file has a different name, 
+# e.g. .env.production, but it is generally best practice to ignore all .env files
+
+# Editors and OS files
+.idea/          # For PyCharm/IntelliJ
+.vscode/        # For VS Code
+.DS_Store       # For macOS
+Thumbs.db       # For Windows
+
+# Build artifacts
+dist/
+build/
+*.whl
+htmlcov/
+.coverage
+
+# Testing and linting caches
+.pytest_cache/
+.ruff_cache/
+
+# Specific to some deployments/tools
+# If using Docker, you might want to ignore specific logs
+# If using Gunicorn, you might have specific log files to ignore
+
+# Media and Uploads (if stored locally)
+media/
+uploads/

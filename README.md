@@ -32,12 +32,13 @@ No cell references. No formulas. Just questions.
 ```
 SemantiSheet/
 │── backend/
-│   ├── main.py                # FastAPI core server
-│   ├── index_data.py          # Spreadsheet parsing & indexing
-│   ├── ingestion.py           # Excel ingestion helper
-│   ├── chroma_db/             # Vector DB folder
-│   ├── data/                  # Uploaded Excel files
-│   ├── requirements.txt
+    ├── api
+    │   └── main.py            # FastAPI server
+    ├── chroma_db              # Store vector embeddings
+    ├── data                   # Store excel files temporarily
+    └── utils
+        ├── index_data.py
+        └── ingestion.py
 │── frontend/
 │   ├── src/
 │   │   ├── App.js             # Main React UI
