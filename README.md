@@ -4,9 +4,9 @@
 
 ---
 
-##  **What is SheetSense?**
+##  **What is SemantiSheet?**
 
-**SheetSense AI Search** lets you upload Excel spreadsheets and **query them using plain English**, powered by:
+**SemantiSheet AI Search** lets you upload Excel spreadsheets and **query them using plain English**, powered by:
 
 | Component             | Purpose                         |
 | --------------------- | ------------------------------- |
@@ -30,7 +30,7 @@ No cell references. No formulas. Just questions.
 ## 📂 **Project Structure**
 
 ```
-SheetSense/
+SemantiSheet/
 │── backend/
 │   ├── main.py                # FastAPI core server
 │   ├── index_data.py          # Spreadsheet parsing & indexing
