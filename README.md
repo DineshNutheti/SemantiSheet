@@ -1,4 +1,4 @@
-# **SheetSense AI Search**
+# **SemantiSheet AI Search**
 
 *Ask business questions to Excel — no formulas, just natural language.*
 
