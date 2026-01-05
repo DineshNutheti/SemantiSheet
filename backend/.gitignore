@@ -1,48 +1,38 @@
-# Python
-.Python
-__pycache__
+# --- Security & Secrets (CRITICAL) ---
+.env
+.env.*
+.secrets.toml
+*.pem
+*.key
+
+# --- SemantiSheet RAG Data (DO NOT COMMIT) ---
+# Prevents uploading the heavy Vector DB and private Excel files
+chroma_db/
+data/
+
+# --- Python ---
+__pycache__/
 *.pyc
-*.pyd
 *.pyo
+*.pyd
 *.egg
 *.egg-info/
+*.whl
 
-# Virtual environment
+# --- Virtual Environment ---
 .venv/
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
-# Environment variables and secrets (CRITICAL)
-.env
-.flaskenv
-.secrets.toml
-# adjust the above lines if your environment file has a different name, 
-# e.g. .env.production, but it is generally best practice to ignore all .env files
+# --- Editors & OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
 
-# Editors and OS files
-.idea/          # For PyCharm/IntelliJ
-.vscode/        # For VS Code
-.DS_Store       # For macOS
-Thumbs.db       # For Windows
-
-# Build artifacts
-dist/
-build/
-*.whl
-htmlcov/
-.coverage
-
-# Testing and linting caches
+# --- Testing & Logs ---
 .pytest_cache/
-.ruff_cache/
-
-# Specific to some deployments/tools
-# If using Docker, you might want to ignore specific logs
-# If using Gunicorn, you might have specific log files to ignore
-
-# Media and Uploads (if stored locally)
-media/
-uploads/
+.coverage
+htmlcov/
+*.log
